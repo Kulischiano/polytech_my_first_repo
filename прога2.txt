@@ -1,6 +1,0 @@
-mov A,23 
-MOV B,12 
-MOV C,A 
-MOV A,B 
-MOV B,C 
-ADD A,B
