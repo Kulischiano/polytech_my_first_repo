@@ -1,0 +1,22 @@
+JMP fallen 
+data: DB "23/12" 
+DB 0 
+fallen: 
+MOV C, data 
+MOV D, 232 
+CALL print 
+HLT 
+print: 
+PUSH A 
+PUSH B 
+MOV B, 0 
+pop: 
+MOV A, [C] 
+MOV [D], A 
+INC C 
+INC D 
+CMP B, [C] 
+JNZ pop 
+POP B 
+POP A 
+RET
