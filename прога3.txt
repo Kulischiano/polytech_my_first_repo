@@ -1,7 +1,0 @@
-JMP HB 
-DB 23 
-DB 12 
-HB: 
-MOV A,1 
-MOV B,7 
-ADD A,B
