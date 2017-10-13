@@ -1,0 +1,10 @@
+JMP zamai 
+DB 5 
+zamai: 
+mov a, 5 
+mov b, a 
+antihype: 
+DEC B 
+MUL B 
+CMP B,1 
+JNE antihype
